@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 33218900247378062}
   - component: {fileID: 23072247148951056}
   - component: {fileID: 8031786347661507969}
-  - component: {fileID: 7181356420331679580}
-  - component: {fileID: 4445073189538182424}
+  - component: {fileID: 45964437324811740}
+  - component: {fileID: 8574512921394990797}
   m_Layer: 0
   m_Name: Cube_10
   m_TagString: Untagged
@@ -107,7 +107,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.2696854, y: 2.3269477, z: 0.1337069}
   m_Center: {x: -0.6115959, y: -0.40481472, z: 0.001661066}
---- !u!54 &7181356420331679580
+--- !u!54 &45964437324811740
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,12 +129,12 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!59 &4445073189538182424
+--- !u!59 &8574512921394990797
 HingeJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,16 +143,16 @@ HingeJoint:
   m_GameObject: {fileID: 1451300095138062}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: -0.5, z: -0.12}
-  m_Axis: {x: 1, y: 0, z: 0}
+  m_Anchor: {x: 0.08, y: 0.17, z: -0.02}
+  m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -1.0684357, y: 1.2896309, z: -4.400616}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
+    spring: 10
+    damper: 1
+    targetPosition: 90
   m_UseMotor: 0
   m_Motor:
     targetVelocity: 0
