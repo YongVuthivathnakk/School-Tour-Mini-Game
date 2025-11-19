@@ -10319,6 +10319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: logo_wall
       objectReference: {fileID: 0}
+    - target: {fileID: 7668682671804052341, guid: a9bce644a634d134c85258b63c78a112, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7835654831211670396, guid: a9bce644a634d134c85258b63c78a112, type: 3}
       propertyPath: m_LocalPosition.x
       value: -70.953384
@@ -10362,7 +10366,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1321639857891181975, guid: a9bce644a634d134c85258b63c78a112, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+    - targetCorrespondingSourceObject: {fileID: 9035832597633736143, guid: a9bce644a634d134c85258b63c78a112, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: a9bce644a634d134c85258b63c78a112, type: 3}
 --- !u!1001 &568125098
 PrefabInstance:
@@ -32113,7 +32123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3571620193883891646, guid: d8cdd12539d8b904cb03cb4d43408875, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 196.04
+      value: 194.74
       objectReference: {fileID: 0}
     - target: {fileID: 3571620193883891646, guid: d8cdd12539d8b904cb03cb4d43408875, type: 3}
       propertyPath: m_LocalRotation.w
