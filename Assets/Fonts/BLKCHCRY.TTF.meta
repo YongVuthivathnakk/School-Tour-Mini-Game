@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9a6ef20387b14b841b84db17cec00e95
+guid: 345fd33b391480940a4a8d42fc42110a
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Niradei
+  - BlackChancery
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
