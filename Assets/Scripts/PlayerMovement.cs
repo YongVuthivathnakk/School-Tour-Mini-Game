@@ -20,6 +20,9 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+
+        speed = PlayerPrefs.GetFloat("PlayerSpeed", speed);
+
     }
 
     void Update()

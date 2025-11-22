@@ -18,7 +18,9 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Start()
     {
-                Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
+        Speed = PlayerPrefs.GetFloat("PlayerSpeed", Speed);
+        Sensitivity = PlayerPrefs.GetFloat("CursorSensitivity", Sensitivity);
     }
     void Update()
     {
@@ -28,6 +30,15 @@ public class NewBehaviourScript : MonoBehaviour
         MovePlayer();
         MovePlayerCamera();
     }
+
+
+    private void PauseMenu()
+  {
+    if(Input.GetKeyDown(KeyCode.Escape))
+    {
+      
+    }
+  }
 
     private void MovePlayer()
     {
