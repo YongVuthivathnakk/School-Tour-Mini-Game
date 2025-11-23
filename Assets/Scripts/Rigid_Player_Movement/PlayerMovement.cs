@@ -1,9 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+
+public class PlayerBehaviour : MonoBehaviour
 {
+
+
     private Vector3 playerMovementInput;
     private Vector2 playerMouseInput;
 
@@ -14,6 +16,12 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField] private float Speed = 10f;
     [SerializeField] private float Jumpforce = 7f;
     [SerializeField] private float Sensitivity = 2f;
+    [SerializeField] private Transform GroundCheck;
+    [SerializeField] private LayerMask GroundMask;
+    [HideInInspector] public bool menuOpen = false;
+
+    [HideInInspector] private float minVerticalAngle = -90f; // look down limit
+    [HideInInspector] private float maxVerticalAngle = 90f;  // look up limit
 
 
     void Start()
@@ -24,6 +32,11 @@ public class NewBehaviourScript : MonoBehaviour
     }
     void Update()
     {
+        if(!menuOpen)
+    {
+      
+        Speed = PlayerPrefs.GetFloat("PlayerSpeed", Speed);
+        Sensitivity = PlayerPrefs.GetFloat("CursorSensitivity", Sensitivity);
         playerMovementInput = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         playerMouseInput = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
@@ -31,14 +44,8 @@ public class NewBehaviourScript : MonoBehaviour
         MovePlayerCamera();
     }
 
-
-    private void PauseMenu()
-  {
-    if(Input.GetKeyDown(KeyCode.Escape))
-    {
-      
     }
-  }
+
 
     private void MovePlayer()
     {
@@ -47,7 +54,10 @@ public class NewBehaviourScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            PlayerBody.AddForce(Vector3.up * Jumpforce, ForceMode.Impulse);
+            if(Physics.CheckSphere(GroundCheck.position, 0.1f, GroundMask))
+            {
+                PlayerBody.AddForce(Vector3.up * Jumpforce, ForceMode.Impulse);
+            }
         }
     }
 
@@ -55,7 +65,11 @@ public class NewBehaviourScript : MonoBehaviour
     private void MovePlayerCamera()
     {
         xRotation -= playerMouseInput.y * Sensitivity;
+
+        xRotation = Mathf.Clamp(xRotation, minVerticalAngle, maxVerticalAngle);
+
         transform.Rotate(0f, playerMouseInput.x * Sensitivity, 0f);
+
         PlayerCamera.transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
     }
 }

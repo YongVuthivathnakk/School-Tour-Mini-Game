@@ -8507,9 +8507,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 347105658}
     m_Modifications:
+    - target: {fileID: 2994041178540057801, guid: 0353107cfff9b9f45a4920a0dc718e4d, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048099788238236699, guid: 0353107cfff9b9f45a4920a0dc718e4d, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8186680830157075441, guid: 0353107cfff9b9f45a4920a0dc718e4d, type: 3}
       propertyPath: m_Name
       value: football goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186680830157075441, guid: 0353107cfff9b9f45a4920a0dc718e4d, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8851612292932135243, guid: 0353107cfff9b9f45a4920a0dc718e4d, type: 3}
       propertyPath: m_LocalScale.x
@@ -9350,7 +9362,7 @@ GameObject:
   - component: {fileID: 532981050}
   - component: {fileID: 532981052}
   - component: {fileID: 532981051}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10884,6 +10896,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 51cdd2aa46505fa4c9575f09734358f9, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 51cdd2aa46505fa4c9575f09734358f9, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12172,9 +12192,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: 32245a603b310c543a99ef775661e9bb, type: 2}
+    - target: {fileID: -7029948723529949830, guid: b89906ef540a3804a804a6cea2842b2a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b89906ef540a3804a804a6cea2842b2a, type: 3}
       propertyPath: m_Name
       value: minisoccer
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b89906ef540a3804a804a6cea2842b2a, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -24812,6 +24840,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1409522371}
+  - {fileID: 1933751409}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -26832,6 +26861,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4240109998300524, guid: 405988af1bd38ee4fb92e86058b6c926, type: 3}
   m_PrefabInstance: {fileID: 956023271}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1358787453 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3139903499887473061, guid: d8cdd12539d8b904cb03cb4d43408875, type: 3}
+  m_PrefabInstance: {fileID: 1670196186}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92b1bf5531a44d54eacb176de350c6cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1360720750 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4178711107447962, guid: bc6109ee673f0a244981c84f7b064a43, type: 3}
@@ -27727,6 +27767,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1409522371}
   - component: {fileID: 1409522372}
+  - component: {fileID: 1409522373}
   m_Layer: 5
   m_Name: PauseMenu
   m_TagString: Untagged
@@ -27767,6 +27808,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   container: {fileID: 1241126477}
+  player: {fileID: 1358787453}
+--- !u!114 &1409522373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409522370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01899e98da62497459ecdca9f43d6abb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1412217200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4240109998300524, guid: 405988af1bd38ee4fb92e86058b6c926, type: 3}
@@ -28655,7 +28709,7 @@ GameObject:
   - component: {fileID: 1456837505}
   - component: {fileID: 1456837509}
   - component: {fileID: 1456837508}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33878,9 +33932,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 347105658}
     m_Modifications:
+    - target: {fileID: 2994041178540057801, guid: 0353107cfff9b9f45a4920a0dc718e4d, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4048099788238236699, guid: 0353107cfff9b9f45a4920a0dc718e4d, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8186680830157075441, guid: 0353107cfff9b9f45a4920a0dc718e4d, type: 3}
       propertyPath: m_Name
       value: football goal (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186680830157075441, guid: 0353107cfff9b9f45a4920a0dc718e4d, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8851612292932135243, guid: 0353107cfff9b9f45a4920a0dc718e4d, type: 3}
       propertyPath: m_LocalScale.x
@@ -34531,7 +34597,7 @@ GameObject:
   - component: {fileID: 1742369384}
   - component: {fileID: 1742369383}
   - component: {fileID: 1742369382}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40886,9 +40952,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3756473180518285571, guid: b4f62e88b69b64f458e649f1b9028f3f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1025663018108745142, guid: b4f62e88b69b64f458e649f1b9028f3f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b4f62e88b69b64f458e649f1b9028f3f, type: 3}
       propertyPath: m_Name
       value: Fountain
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b4f62e88b69b64f458e649f1b9028f3f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -43117,7 +43195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1963403727506546873, guid: 5780b8e278d568046a3616aff85bb5a8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4522806879650972150, guid: 5780b8e278d568046a3616aff85bb5a8, type: 3}
       propertyPath: m_AnchorMax.x
@@ -43125,7 +43203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4522806879650972150, guid: 5780b8e278d568046a3616aff85bb5a8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4522806879650972150, guid: 5780b8e278d568046a3616aff85bb5a8, type: 3}
       propertyPath: m_AnchorMin.x
@@ -43225,7 +43303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8294088306810969040, guid: 5780b8e278d568046a3616aff85bb5a8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8294088306810969040, guid: 5780b8e278d568046a3616aff85bb5a8, type: 3}
       propertyPath: m_AnchorMin.x
@@ -43237,7 +43315,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8303397786552683996, guid: 5780b8e278d568046a3616aff85bb5a8, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551613434874547403, guid: 5780b8e278d568046a3616aff85bb5a8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1409522373}
+    - target: {fileID: 8551613434874547403, guid: 5780b8e278d568046a3616aff85bb5a8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Reset
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551613434874547403, guid: 5780b8e278d568046a3616aff85bb5a8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ResetSlider, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8724407345677663557, guid: 5780b8e278d568046a3616aff85bb5a8, type: 3}
       propertyPath: m_Name
@@ -43608,12 +43698,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933751406}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1920, y: -1080, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1277695580}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1933829768
 PrefabInstance:
@@ -47629,5 +47719,4 @@ SceneRoots:
   - {fileID: 1552764576}
   - {fileID: 1670196186}
   - {fileID: 8953719403404846305}
-  - {fileID: 1933751409}
   - {fileID: 1277695580}

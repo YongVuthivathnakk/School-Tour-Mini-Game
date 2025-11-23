@@ -1,17 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class PauseMenu : MonoBehaviour
 {
 
 
+
+
     public GameObject container;
+    [SerializeField] private PlayerBehaviour player;
     // Start is called before the first frame update
     void Start()
     {
+
+
         Cursor.lockState = CursorLockMode.Locked;
         
     }
@@ -24,6 +25,7 @@ public class PauseMenu : MonoBehaviour
             container.SetActive(true);
             Time.timeScale = 0;
             Cursor.lockState = CursorLockMode.None;
+            player.menuOpen = true;
         }
     }
 
@@ -32,6 +34,8 @@ public class PauseMenu : MonoBehaviour
     container.SetActive(false);
     Time.timeScale = 1;
     Cursor.lockState = CursorLockMode.Locked;
+    player.menuOpen = false;
+
   }
 
   public void MainMenu()
